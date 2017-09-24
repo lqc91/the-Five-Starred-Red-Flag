@@ -1,0 +1,35 @@
+.bg{
+	width:464px;
+	height:310px;
+	background:red;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding-top:64px;
+	padding-left:32px;
+}
+.star,.star1:before,.star1:after{
+	width:0;
+	height:0;
+	border-top:33px solid yellow;
+	border-right:46px solid transparent;
+	border-bottom:33px solid transparent;
+	border-left:46px solid transparent;
+}
+.star{
+	position:relative;
+}
+.star1:before,.star1:after{
+	display:block;
+	position:absolute;
+	content:"";
+}
+.star1:before{
+	left:-64px;
+	top:-46px;
+	transform:rotate(73deg);
+}
+.star1:after{
+	left:-28px;
+	top:-46px;
+	transform:rotate(-73deg);
+}
